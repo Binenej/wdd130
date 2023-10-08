@@ -1,0 +1,14 @@
+img {
+    width: 30%;
+}
+p {
+    width: 10%;
+}
+a {
+    font-size: 1.5em;
+}
+div {
+    max-width: 1600px;
+    height: 100px;
+    background-color: powderblue;
+  }
