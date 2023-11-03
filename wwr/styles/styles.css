@@ -75,6 +75,11 @@ footer {
   color: #fff; 
 }
 
+.home-grid{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+}
+
 nav a {
   color: #333;
 }
@@ -92,7 +97,7 @@ h4 {
   color:#666;
 }
 
-.book, join {
+.book, .join {
   color: #fff;
 }
 
@@ -105,7 +110,7 @@ h4 {
 }
 
 footer {
-  color: #999;
+  color: #fff;
   margin-top: 200px;
 }
 
@@ -126,23 +131,25 @@ footer a:hover {
   width: 100%;
 }
 
-nav a {text-decoration: none;
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 35px;
 }
 
 .book, .join {
   text-decoration: none;
+  font-size: 18px;
 }
 footer a {
+  color: white;
   text-decoration: none;
   padding: 25px 50px;
 }
 
-nav a:hover, .book:hover, .join:hover, footer a:hover {
-  text-decoration: underline;
-}
-
-footer p a:hover {
-  text-decoration: underline;
+nav a:hover, .book:hover, .join:hover, footer p a:hover {
+  background-color: #ffcc00; 
+  color: #000;
 }
 
 body {
@@ -153,11 +160,9 @@ body {
 
 .home-title {
   font-size: 2em;
+  color: white;
 }
 
-.book, .join {
-  font-size: 18px;
-}
 
 .msg p {
   font-size: 0.8em;
