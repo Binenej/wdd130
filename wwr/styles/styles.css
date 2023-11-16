@@ -80,11 +80,7 @@ footer {
   grid-template-columns: repeat(10,1fr);
 }
 
-.river-grid{
-  display: grid;
-  grid-template-columns: repeat(1fr, 1fr, 1fr);
-  gap: 20px;
-}
+
 
 nav a {
   color: #333;
@@ -278,49 +274,8 @@ nav {
   box-shadow: 5px 5px 10px #6f7364;
 
 }
-.rivers {
-  width: 200%;
-  grid-column: 2/5;
-  grid-row: 5/8;
-  box-shadow: 5px 5px darkslategrey ;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid;
-}
 
-.msg {
-  grid-column: 1;
-  grid-row: 2;
-  border: 1px solid;
-  padding: 20px;
-}
-.box {
-  border: 1px solid #01070b; /* Add border for visibility */
-  padding: 20px; /* Add padding for spacing inside the box */
-  width: 250%; /* Set the width of the box */
-  height: 1000pxs;
-  margin: 0 auto;
-  box-sizing: 5px 5px 10px;
-  background-color: #213549;
-  color: white;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;  /*Set the height of the body to 100% */
-  display: grid;
-  grid-template-rows: auto 1fr 1fr;
-  place-items: center;
-}
-/*.content-container{
-  display: grid;
-  place-items: center;
-}*/
+
 
 .msg {
   grid-column: 6/10;
@@ -346,6 +301,46 @@ footer {
 .card-img:hover {
   opacity: .6;
   transform: scale(1.1);
+}
+
+/* River Page */
+
+.river-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.content-container {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.rivers {
+  width: 100%;
+  grid-column: 2/5;
+  grid-row: 2/6;
+  box-shadow: 5px 5px darkslategrey ;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid;
+}
+
+.river-msg {
+  grid-column: 3/4  ;
+  grid-row: 3/4;
+  border: 1px solid;
+  padding: 20px;
+  background-color: #213549;
+}
+.box {
+  border: 1px solid #01070b; /* Add border for visibility */
+  padding: 20px; /* Add padding for spacing inside the box */
+  width: 250%; /* Set the width of the box */
+  margin: 0 auto;
+  box-sizing: 5px 5px 10px;
+  background-color: #213549;
+  color: white;
 }
 
 @media screen and (max-width: 900px) {
