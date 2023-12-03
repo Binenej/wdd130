@@ -49,6 +49,18 @@
                 <img class="icon" src="images/oars.png" alt="oars icon">
                 <h2>Rapids</h2>
             </section>
+            <!-- The video -->
+            <video autoplay muted loop id="myVideo">
+            <source src="images/thhhhhhhhhhhh.mp4" type="video/mp4">
+            </video>
+  
+            <!-- Optional: some overlay text to describe the video -->
+            <div class="content">
+            <h1>Heading</h1>
+            <p>Lorem ipsum...</p>
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+            </div>
             <div id="background"></div>
             <img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
             <section class="msg">
@@ -74,5 +86,23 @@
             </div>
          </footer>
     </div>
+    <script>
+        // Get the video
+        var video = document.getElementById("myVideo");
+        
+        // Get the button
+        var btn = document.getElementById("myBtn");
+        
+        // Pause and play the video, and change the button text
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+    </script>
 </body>
 </html>
